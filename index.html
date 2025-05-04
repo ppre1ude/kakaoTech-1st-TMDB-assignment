@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎬 재원의 TMDB</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>🎬 재원의 영화 공작소 🎬</h1>
+      <nav>
+        <a href="#/">메인</a>
+        <a href="#/popular">Popular</a>
+        <a href="#/bookmark">북마크</a>
+      </nav>
+      <img src="Chilly Willy.jpg" alt="Chilly Willy" class="header-image" />
+      <h3>
+        보고 싶은 영화가 있나요? 아래에
+        <span class="highlight-title">제목</span>을 검색하세요!
+      </h3>
+      <h3>
+        좋아하는 영화가 있다면 <span class="highlight-heart">하트</span>를 눌러
+        보관하세요 😉
+      </h3>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="영화 제목을 입력하세요..."
+        />
+        <button id="searchButton">검색</button>
+      </div>
+    </header>
+
+    <main>
+      <h1 id="page-title"></h1>
+      <section id="movieList" class="movie-list"></section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeModal" class="close-button">&times;</span>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
